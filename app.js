@@ -27,5 +27,12 @@ app.use("/games", gamesRoutes)
 app.use('/orders', ordersRoutes);
 app.use('/optionalRoutes', optionalRoutes);
 
+//* TEST ROUTE *
+app.get('/', (req, res, next) => {
+  res.status(200).json({
+    status: 'Success',
+    message: 'Online'
+  })
+})
 
 module.exports = app
