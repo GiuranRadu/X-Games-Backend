@@ -33,7 +33,7 @@ app.get('/', (req, res, next) => {
     status: 'Success',
     message: 'Online'
   })
-  console.log('App started! ✅');
+  console.log('App has been accessed! ✅');
 })
 
 module.exports = app
